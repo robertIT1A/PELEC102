@@ -6,7 +6,15 @@
         <title>My first HTML Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+     
+
+        <style>
+            table,th,td {
+                border: 1px solid black;
+                 border-radius: 10px;
+                 border-style: dashed;
+            }
+        </style>
     </head>
     <body>
         <h1 style="color: red;">My First HTML</h1>
@@ -25,22 +33,40 @@
         <p>this is a <ins>BOLD</ins> text</p>
         <p>this is a <sub>BOLD</sub> text</p>
         <p>this is a <sup>BOLD</sup> text</p> //for math
-        {% comment %} fghhthgh {% endcomment %}
 
-        {% comment %} unordered_list {% endcomment %}
         <ul>
             <li>Banana</li>
             <li>Orange</li>
             <li>Lemon</li>
         </ul>
 
-        {% comment %} ordered list {% endcomment %}
          <ol>
             <li>Bong Go</li>
             <li>Robin</li>
             <li>Bato</li>
          </ol>
 
+        <table >
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>coure</th>
+            </tr>
+            <tr>
+                <td>Roberto</td>
+                <td>20</td>
+                <td>BSIT</td>
+            </tr>
+            <tr></tr>
+        </table>
+
+        <!-- fill up form -->
+         <form>
+            <label>Username</label>
+            <input type="Text">
+            <label>Password</label>
+            <input type="Text" value="">
+         </form>
 
     </body>
 </html>
